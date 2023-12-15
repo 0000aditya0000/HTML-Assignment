@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUP Assignment 1 || Web Development Basics</title>
+  
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+nav>img:hover{
+    transform: rotate(120deg);
+    cursor: pointer;
+}
+
+nav>h1{
+    background: linear-gradient(270deg,#D6001C,#6A1F7A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 260px;
+    font-size: 2.5em;
+}
+nav>ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+nav>ul>li{
+    background: #D6001C;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+nav>ul>li:hover{
+   transform: scale(1.2);
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+}
+
+.parts{
+    color: white;
+    background: linear-gradient(319.08deg,rgba(0,148,213,.4) -1.89%,rgba(0,148,213,0) 83.3%),linear-gradient(145.07deg,rgba(106,31,122,.7) -6.16%,rgba(0,0,0,0) 95.11%),linear-gradient(0deg,rgba(15,15,26,.9),rgba(15,15,26,.9)),#6A1F7A;
+}
+.part1{
+    
+    padding: 10px;
+}
+.part1 h1{
+    color: white;
+    text-align: center;
+}
+.part1 h2{
+    margin-top: 10px;
+}
+.syntax{
+    font-size: 20px;
+    margin-top: px;
+}
+.part1 span{
+    color: brown;;
+    font-size: 20px;
+}
+.list{
+    display: flex;
+    border: 1px solid white;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.list_child>p{
+    font-weight: bold;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    color: black;
+  }
+
+  tr:nth-child(even) {
+    background-color: grey;
+  }
+  #Part5{
+    text-align: center;
+    cursor: pointer;
+  }
+</style>
+<body>
+    <!-- Navbar Section Starts -->
+   <nav>
+        <img src="https://8bf962be.rocketcdn.me/wp-content/uploads/2023/12/nashTech-logo-red.svg" alt="Brand_logo">
+        <h1>NUP Assignment 1 : Web Development Basics</h1>
+        <ul>
+            <li><a href="#Part1">Part 1 |</a></li>
+            <li><a href="#Part2">Part 2 |</a></li>
+            <li><a href="#Part3">Part 3 |</a></li>
+            <li><a href="#Part4">Part 4 |</a></li>
+            <li><a href="#Part5">Part 5 |</a></li>
+           
+        </ul>
+   </nav>
+    <!-- Navbar Section Ends -->
+
+    <!-- Part 1 Section Starts -->
+   <div id="Part1" class="parts part1">
+    
+    <h1>Part 1: HTML Elements and Attributes</h1>
+    <h2>HTML Elements</h2>
+    <p>An HTML element is defined by a start tag, some content, and an end tag. The HTML element is everything from the start tag to the end tag.</p>
+    <h2>Heading : :</h2>
+    <h3>Syntax</h3>
+    <p class="syntax"><<span>tagname</span>>Content goes here...<<span>/tagname</span>></p>
+    <h3>Example</h3>
+    <p class="syntax"><<span>h1</span>>This is a Heading<<span>/h1</span>></p>
+    <h2>Paragraph : :</h2>
+    <h3>Syntax</h3>
+    <p class="syntax"><<span>tagname</span>>Content goes here...<<span>/tagname</span>></p>
+    <h3>Example</h3>
+    <p class="syntax"><<span>p</span>>This is a Paragraph<<span>/p</span>></p>
+    <h2>Lists in HTML : :</h2>
+    <p>HTML lists allow web developers to group a set of related items in lists. There are three types of list are present.</p>
+    <div class="list">
+        <div class="list_child">
+            <p>An unordered HTML List :</p>
+            <ul>
+                <li>Items</li>
+                <li>Items</li>
+                <li>Items</li>
+                <li>Items</li>
+                <li>Items</li>
+            </ul>
+        </div>
+        <div class="list_child">
+            <p>An Ordered HTML List :</p>
+            <ol>
+                <li>Items</li>
+                <li>Items</li>
+                <li>Items</li>
+                <li>Items</li>
+                <li>Items</li>
+            </ol>
+        </div>
+        <div class="list_child">
+            <p>A description list is a list of terms, with a description of each term.</p>
+            <dl>
+                <dt>React:</dt>
+                <dd>--A JavaScript Library</dd>
+                <dt>Angular:</dt>
+                <dd>--A JavaScript Framework</dd>
+                <dt>Typescript:</dt>
+                <dd>--Superset of JavaScript</dd>
+            </dl>
+        </div>
+    </div>
+   </div>
+   <!-- Part 1 Section Ends -->
+   <!-- Part 2 Section Starts -->
+
+   <div id="Part2" class="parts part1">
+    <h1>Part 2: Formatting and Semantics</h1>
+    <h2>HTML Text Formatting</h2>
+    <p>HTML contains several elements for defining text with a special meaning.</p>
+    <p><b>This text is bold</b></p>
+    <p><i>This text is italics</i></p>
+    <p><u>This text is underlined</u></p>
+    <p><sub>This text is subsscript</sub>and <sup>this text is superscript</sup></p>
+    <h2>HTML Semantics</h2>
+    <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+   </div>
+   <!-- Part 2 Section Ends -->
+
+   <!-- Part 3 Section Starts -->
+   <div id="Part3" class="parts part1">
+    <h1>Part 3: HTML Forms</h1>
+    <form action="/submit" method="post">
+        <label for="text_input">Text Input (Required):</label>
+        <input type="text" id="text_input" name="text_input" required><br><br>
+    
+        <label for="password_input">Password Input (Required, Minimum 6 Characters):</label>
+        <input type="password" id="password_input" name="password_input" required minlength="6"><br><br>
+    
+        <label for="email_input">Email Input (Required, Valid Email Format):</label>
+        <input type="email" id="email_input" name="email_input" required><br><br>
+    
+        <label for="number_input">Number Input (Minimum 1, Maximum 10):</label>
+        <input type="number" id="number_input" name="number_input" min="1" max="10"><br><br>
+    
+        <label for="date_input">Date Input (Required):</label>
+        <input type="date" id="date_input" name="date_input" required><br><br>
+    
+        <label for="checkbox_input">Checkbox Input (Required):</label>
+        <input type="checkbox" id="checkbox_input" name="checkbox_input" value="checkbox_value" required><br><br>
+    
+        <label>Radio Inputs (Select One):</label><br>
+        <input type="radio" id="radio_input1" name="radio_input" value="radio_value1" required>
+        <label for="radio_input1">Option 1</label><br>
+        <input type="radio" id="radio_input2" name="radio_input" value="radio_value2" required>
+        <label for="radio_input2">Option 2</label><br><br>
+    
+        <label for="file_input">File Input (Required, Allowed File Types: jpg, jpeg, png):</label>
+        <input type="file" id="file_input" name="file_input" accept=".jpg, .jpeg, .png" required><br><br>
+    
+        <label for="submit_button"></label>
+        <input type="submit" id="submit_button" value="Submit">
+      </form>
+   </div>
+   <!-- Part 3 Section Ends -->
+
+   <!-- Part 4 Section Starts -->
+   <div id="Part4" class="parts part1">
+        <h1>Part 4: Tables</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>25</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Michael Johnson</td>
+            <td>28</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Sara Johnson</td>
+            <td>32</td>
+            <td>Australia</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Emily Davis</td>
+            <td>23</td>
+            <td>Germany</td>
+          </tr>
+        </tbody>
+      </table>
+   </div>
+   <!-- Part 4 Section Ends -->
+   <!-- Part 5 Section Starts -->
+   <div id="Part5" class="parts part1">
+    <h1>Part 5: Links, URLs, and Images</h1>
+    <a href="https://Nashtechglobal.com" target="_blank"><img src="https://picsum.photos/200/300" alt="Random Images"></a>
+    <a href="https://knoldus.keka.com" target="_blank"><img src="https://picsum.photos/200/300" alt="Random IMages"></a>
+   </div>
+   <!-- Part 5 Section Ends -->
+</body>
+<script>
+
+</script>
+</html>
+
+
+
+
